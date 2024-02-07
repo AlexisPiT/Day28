@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+section{
+    padding: 1rem; 
+    background-color: hsl(0deg 0% 99.02%);
+}
+.huddle_logo{
+    background: url(Images/bg-hero-desktop.svg),hsl(193, 100%, 96%);
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+.header_huddle{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+   
+}
+.body_huddle{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2em;
+}
+.text_huddle{
+    padding: 2.5rem;
+    line-height: 1.6;
+}
+.logo{
+    height: 100%;
+    width: auto;
+}
+h1{
+    font-size: 3rem;
+}
+.mockups{
+    width: 100%;
+    object-fit: cover;
+}
+.try{
+    padding: 1rem 3.5rem;
+    border-radius: 2rem;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: ease-out 0.4s;
+}
+.try:hover{
+    opacity: 0.8;
+    box-shadow: 3px 3px 10px rgb(214, 213, 213);
+    transform: scale(1.1);
+}
+.started{
+    padding: 1rem 4rem;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: ease-out 0.4s;
+}
+.started:hover{
+    opacity: 0.8;
+    box-shadow: 3px 3px 10px rgb(245, 117, 198);
+    transform: scale(1.1);
+}
+.huddle_info{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+}
+.info{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3em;
+    background-color: white;
+    border-radius: 0.9rem;
+    border: 2px solid hsl(193, 100%, 96%);
+    padding: 2rem;
+    box-shadow: 3px 0px 10px rgb(9 48 57 / 8%);
+    transition: ease-in 0.5s;
+}
+.info:hover{
+    transform: scale(1.1);
+}
+.info_image{
+    width: 100%;
+    object-fit: cover;
+}
+.float{
+    position: absolute;
+    right: 30%;
+    top: 335%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 3px 0px 10px rgb(9 48 57 / 8%);
+    color: black;
+}
+footer{
+    background-color: hsla(192, 100%, 9%, 1);
+    padding: 5rem 5rem 0 5rem;
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    color: white;
+}
+.logo_footer{
+    gap: 2em;
+}
+.footer_text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1em;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.social_media{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 12rem;
+    padding: 7rem 0 0;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    padding: 2rem 0;
+}
+.links > a{
+    border-radius: 50%;
+    padding: 0.5rem;
+    border: 1px solid white;
+}
+.links > a:hover{
+    border: 1px solid hsl(322, 100%, 66%);
+}
+a:hover > i{
+    color: hsl(322, 100%, 66%);
+}
+@media screen and (min-width: 375px) and (max-width: 850px){
+    .huddle_logo{
+        background: url(Images/bg-hero-mobile.svg),hsl(193, 100%, 96%);
+        background-repeat: no-repeat;
+        height: auto;
+        font-size: 14px;
+        text-align: center;
+        
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    .header_huddle{
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    .body_huddle{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        max-width: 30%;
+    }
+    .try{
+        padding: 0.8rem 1.5rem;
+        font-size: 10px;
+    }
+    .info{
+        grid-template-columns: 1fr;
+        font-size: 12px;
+        text-align: center;
+    }
+    .info_reverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    footer{
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        font-size: 0.8rem;
+        margin-top: 6rem;
+        padding-top: 10rem;
+    }
+    ul{
+        grid-template-columns: 1fr;
+        text-align: left;
+        padding: 0;
+    }
+    .social_media{
+        padding: 1rem;
+        gap: 2em;
+    }
+    .links{
+        justify-content: center;
+        gap: 1em;
+    }
+    .float{
+        max-width: 70%;
+        padding: 1rem;
+        right: 10%;
+        top: 400%;
+        text-align: center;
+    }
+    .float > .started{
+        padding: 1rem 2rem;
+        font-size: 0.7rem;
+    }
+}
